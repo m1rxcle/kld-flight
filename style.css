@@ -7,9 +7,15 @@ body {
 	overflow: hidden;
 }
 
+.container {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
 video {
 	width: 100vw;
-	height: 100vh;
+	height: 110vh;
 	object-fit: cover;
 }
 
@@ -80,5 +86,98 @@ header span {
 		bottom: 0;
 		border-radius: 20px 20px 0 0;
 		padding: 0.6rem 1.5rem;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	html {
+		overflow: hidden;
+	}
+
+	.container {
+		max-width: 100vw;
+		max-height: 100vh;
+	}
+
+	#main-header span {
+		font-size: 65px;
+	}
+	video {
+		width: 100vh;
+		height: 110vh;
+		overflow: hidden;
+		object-fit: cover;
+	}
+	.description {
+		bottom: 0;
+		font-size: 15px;
+		width: 90%;
+	}
+	.description p {
+		line-height: 1.3;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	html {
+		overflow: hidden;
+	}
+
+	.container {
+		max-width: 100vw;
+		max-height: 100vh;
+	}
+
+	#main-header span {
+		font-size: 50px;
+	}
+	video {
+		width: 100vh;
+		height: 110vh;
+		overflow: hidden;
+		object-fit: cover;
+	}
+	.description {
+		bottom: 0;
+		font-size: 15px;
+		width: 80%;
+	}
+	.description p {
+		line-height: 1.2;
+	}
+	.second {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	html {
+		overflow: hidden;
+	}
+
+	.container {
+		max-width: 100vw;
+		max-height: 100vh;
+	}
+
+	#main-header span {
+		font-size: 27px;
+	}
+	video {
+		width: 100vh;
+		height: 110vh;
+		overflow: hidden;
+		object-fit: cover;
+	}
+	.description {
+		bottom: 0;
+		font-size: 15px;
+		width: 80%;
+	}
+	.description p {
+		line-height: 1.2;
+	}
+	.second {
+		display: none;
 	}
 }

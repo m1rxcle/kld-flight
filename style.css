@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Montserrat", sans-serif;
+	overflow: hidden;
+}
+
+video {
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+}
+
+header {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -100%);
+	color: white;
+	text-align: center;
+}
+
+header h1 {
+	font-weight: 500;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	line-height: 1;
+}
+
+header span {
+	font-weight: 800;
+	text-shadow: 2px 2px 1px black;
+	text-align: center;
+	font-size: 7rem;
+	display: block;
+	opacity: 0;
+	transition: opacity 1s, transform 1s;
+}
+
+.description {
+	position: absolute;
+	bottom: 2%;
+	width: 50%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-color: black;
+	color: white;
+	border-radius: 20px;
+	opacity: 0.7;
+	padding: 1.5rem;
+}
+.description p {
+	text-align: center;
+	max-width: 42rem;
+	margin-inline: auto;
+	line-height: 1;
+}
+
+.copyright a {
+	color: white;
+	text-underline-offset: 1.8px;
+}
+
+.copyright a:hover {
+	text-decoration: none;
+	color: steelblue;
+	transition: all 0.3s;
+}
+.copyright {
+	font-size: 0.65rem;
+}
+
+@media screen and (max-width: 1200px) {
+	.description {
+		position: absolute;
+		width: 95vw;
+		bottom: 0;
+		border-radius: 20px 20px 0 0;
+		padding: 0.6rem 1.5rem;
+	}
+}
